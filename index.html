@@ -72,43 +72,64 @@
   </style>
 </head>
 <body>
+  <script>
+    // Header
+    const header = document.createElement("header");
+    header.innerHTML = `
+      <h1>Profesor Manuel Villanueva Reyna</h1>
+      <p>División Académica de Ciencias y Tecnologías de la Información (DACYTI) - UJAT</p>
+    `;
+    document.body.appendChild(header);
 
-  <header>
-    <h1>Profesor Manuel Villanueva Reyna</h1>
-    <p>División Académica de Ciencias y Tecnologías de la Información (DACYTI) - UJAT</p>
-  </header>
+    // Navbar
+    const nav = document.createElement("nav");
+    nav.innerHTML = `
+      <a href="#sobre">Sobre el Profesor</a>
+      <a href="#materias">Materias</a>
+      <a href="#contacto">Contacto</a>
+    `;
+    document.body.appendChild(nav);
 
-  <nav>
-    <a href="#sobre">Sobre el Profesor</a>
-    <a href="#materias">Materias</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+    // Sección: Sobre
+    const sobre = document.createElement("section");
+    sobre.id = "sobre";
+    sobre.innerHTML = `
+      <h2>Sobre el Profesor</h2>
+      <p>El profesor <strong>Manuel Villanueva Reyna</strong> es un docente destacado en el área de matemáticas de la <strong>Universidad Juárez Autónoma de Tabasco</strong>, dentro de la <strong>DACYTI</strong>. Con una amplia trayectoria, su pasión por la enseñanza ha marcado la formación de numerosos estudiantes.</p>
+    `;
+    document.body.appendChild(sobre);
 
-  <section id="sobre">
-    <h2>Sobre el Profesor</h2>
-    <p>El profesor <strong>Manuel Villanueva Reyna</strong> es un docente destacado en el área de matemáticas de la <strong>Universidad Juárez Autónoma de Tabasco</strong>, dentro de la <strong>DACYTI</strong>. Con una amplia trayectoria, su pasión por la enseñanza ha marcado la formación de numerosos estudiantes.</p>
-  </section>
+    // Sección: Materias
+    const materias = document.createElement("section");
+    materias.id = "materias";
+    materias.innerHTML = `
+      <h2>Materias que imparte</h2>
+      <ul>
+        <li>Álgebra Lineal</li>
+        <li>Cálculo Diferencial</li>
+        <li>Cálculo Integral</li>
+        <li>Métodos Numéricos</li>
+        <li>Probabilidad y Estadística</li>
+      </ul>
+    `;
+    document.body.appendChild(materias);
 
-  <section id="materias">
-    <h2>Materias que imparte</h2>
-    <ul>
-      <li>Álgebra Lineal</li>
-      <li>Cálculo Diferencial</li>
-      <li>Cálculo Integral</li>
-      <li>Métodos Numéricos</li>
-      <li>Probabilidad y Estadística</li>
-    </ul>
-  </section>
+    // Sección: Contacto
+    const contacto = document.createElement("section");
+    contacto.id = "contacto";
+    contacto.innerHTML = `
+      <h2>Contacto</h2>
+      <p><strong>Correo institucional:</strong> <a href="mailto:MVR02260@docente.ujat.mx">MVR02260@docente.ujat.mx</a></p>
+      <p><strong>Horario laboral:</strong> 08:00 a. m. - 05:00 p. m.</p>
+    `;
+    document.body.appendChild(contacto);
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p><strong>Correo institucional:</strong> <a href="mailto:MVR02260@docente.ujat.mx">MVR02260@docente.ujat.mx</a></p>
-    <p><strong>Horario laboral:</strong> 08:00 a. m. - 05:00 p. m.</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Universidad Juárez Autónoma de Tabasco - DACYTI</p>
-  </footer>
-
+    // Footer
+    const footer = document.createElement("footer");
+    footer.innerHTML = `
+      <p>&copy; 2025 Universidad Juárez Autónoma de Tabasco - DACYTI</p>
+    `;
+    document.body.appendChild(footer);
+  </script>
 </body>
 </html>
